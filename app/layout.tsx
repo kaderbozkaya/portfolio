@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Poppins } from "next/font/google";
 import "./globals.css";
+import Nav from "./Nav";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} ${outFit.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
       >
+        <Nav />
         {children}
       </body>
     </html>

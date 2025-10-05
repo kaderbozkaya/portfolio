@@ -1,11 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+// import About from "./components/About";
+// import Contact from "./components/Contact";
+// import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import Navbar from "./components/Navbar";
+// import Projects from "./components/Projects";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -30,14 +30,14 @@ export default function Home() {
       localStorage.theme = "";
     }
   }, [isDarkMode]);
-  return (
-    <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Header isDarkMode={isDarkMode} />
-      <About isDarkMode={isDarkMode} />
-      <Projects isDarkMode={isDarkMode} />
-      <Contact isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
-    </>
-  );
+  // return (
+  //   <>
+  //     <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+  //     <Header isDarkMode={isDarkMode} />
+  //     <About isDarkMode={isDarkMode} />
+  //     <Projects isDarkMode={isDarkMode} />
+  //     <Contact isDarkMode={isDarkMode} />
+  //     <Footer isDarkMode={isDarkMode} />
+  //   </>
+  // );
 }
