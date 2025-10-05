@@ -52,3 +52,36 @@ body {
 .active-links::after{
   opacity: 1 !important;
 }
+
+/* HEADER ------------- */
+.hero-image:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0) 48%, rgba(0,0,0,0.8) 100%);
+}
+
+.hero-social-icon{
+  color: #6a20a6;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: var(--transition-regular);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:991px){
+  body{
+    overflow-x:hidden !important;
+    overflow-y: scroll !important;
+  }
+}

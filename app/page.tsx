@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Header from "./Header/page";
 // import About from "./components/About";
 // import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
@@ -30,14 +31,14 @@ export default function Home() {
       localStorage.theme = "";
     }
   }, [isDarkMode]);
-  // return (
-  //   <>
-  //     <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-  //     <Header isDarkMode={isDarkMode} />
-  //     <About isDarkMode={isDarkMode} />
-  //     <Projects isDarkMode={isDarkMode} />
-  //     <Contact isDarkMode={isDarkMode} />
-  //     <Footer isDarkMode={isDarkMode} />
-  //   </>
-  // );
+  return (
+    <>
+      {/* <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} /> */}
+      <Header />
+      {/* <About isDarkMode={isDarkMode} /> */}
+      {/* <Projects isDarkMode={isDarkMode} /> */}
+      {/* <Contact isDarkMode={isDarkMode} /> */}
+      {/* <Footer isDarkMode={isDarkMode} /> */}
+    </>
+  );
 }
