@@ -105,6 +105,36 @@ padding: 2px;
 /* .custom-scrollbar::-webkit-scrollbar-thumb:hover{
   background-color: var(--text-color2);
 } */
+
+
+/*-----------PROJECT------------ */
+@keyframes Anim-bottom {
+  0%{
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.work-content h2{
+  opacity: 0;
+  animation: Anim-bottom var(--transition-regular) 1.4s forwards linear;
+}
+.work-content h3{
+  opacity: 0;
+  animation: Anim-bottom var(--transition-regular) 1.2s forwards linear;
+}
+.work-content p{
+  opacity: 0;
+  animation: Anim-bottom var(--transition-regular) 1s forwards linear;
+}
+.work-image{
+  opacity: 0;
+  animation: Anim-bottom var(--transition-regular) 0.3s forwards linear;
+}
+
 /* RESPONSIVE */
 
 @media (max-width:991px){
