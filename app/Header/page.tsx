@@ -15,7 +15,7 @@ export default function Header() {
             MIS Graduate | Bridging Business & Technology
           </p>
           <h1 className="text-5xl text-start lg:text-8xl mb-2 text-[var(--text-color)] ">
-            Hello I'm{" "}
+            Hello I&apos;m Kader
             <span className="text-[var(--text-color2)]">Kader Bozkaya</span>
           </h1>
           <p className="text-[color:var(--text-color)] text-md lg:text-xl my-8">
