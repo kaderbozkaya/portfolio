@@ -55,7 +55,7 @@ export default function About() {
     },
   ];
   return (
-    <section className="px*[8%] lg:px-[16%] py-20 text-white">
+    <section className="px-[8%] lg:px-[16%] py-20 text-white">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
           <div className="flex flex-col gap-5">

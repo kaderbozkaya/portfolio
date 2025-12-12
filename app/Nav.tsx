@@ -5,12 +5,10 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
-import { FaMoon } from "react-icons/fa6";
-import { GoSun } from "react-icons/go";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+
   const pathname = usePathname();
   const navLinks = [
     { name: "Home", href: "/" },
@@ -41,28 +39,12 @@ export default function Nav() {
               {link.name}
             </Link>
           ))}
-
-          {/* Dark Mode */}
-          <button onClick={() => setIsDarkMode((prev) => !prev)}>
-            {isDarkMode ? (
-              <GoSun className="w-6 h-6" />
-            ) : (
-              <FaMoon className="w-6 h-6" />
-            )}
-          </button>
         </div>
 
         {/* Mobile Hamburger & Dark Mode */}
         <div className="flex lg:hidden items-center gap-4">
-          <button onClick={() => setIsDarkMode((prev) => !prev)}>
-            {isDarkMode ? (
-              <GoSun className="w-6 h-6" />
-            ) : (
-              <FaMoon className="w-6 h-6" />
-            )}
-          </button>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <CiMenuFries className="text-2xl" />
+            <CiMenuFries className="text-3xl cursor-pointer" />
           </button>
         </div>
       </div>
