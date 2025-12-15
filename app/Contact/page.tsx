@@ -1,15 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import type { FormEvent } from "react";
 
 export default function Contact() {
   const [result, setResult] = useState("");
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending....");
-    const formData = new FormData(event.target);
 
+    const formData = new FormData(event.currentTarget);
     formData.append("access_key", "your key from web3forms ");
 
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -21,12 +22,13 @@ export default function Contact() {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
-      event.target.reset();
+      event.currentTarget.reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
     }
   };
+
   return (
     <section className="px-[8%] lg:px-[8%]">
       <div className="container md:px-5 md:py-24 mx-auto">
