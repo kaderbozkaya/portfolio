@@ -19,15 +19,24 @@
 
 // export default nextConfig;
 
+// import type { NextConfig } from "next";
+
+// const nextConfig: NextConfig = {
+//   output: "export",
+//   images: {
+//     unoptimized: true,
+//   },
+//   basePath: "/portfolio",
+//   assetPrefix: "/portfolio/",
+// };
+
+// export default nextConfig;
+
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
-  basePath: "/portfolio",
-  assetPrefix: "/portfolio/",
+  // Vercel için ekstra ayara gerek yok
 };
 
 export default nextConfig;

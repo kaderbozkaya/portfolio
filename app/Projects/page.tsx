@@ -12,48 +12,49 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 
 export default function ProjectSlider() {
+  const BASE_PATH = "/portfolio";
   const projects = [
     {
       id: "01",
       title: "User Persona – Expense Tracking Project",
       desc: "This persona was created for an expense tracking project to understand user behaviors and needs in managing personal finances more consciously.",
-      img: "/Persona5.png",
+      img: `${BASE_PATH}/Persona5.png`,
       url: "https://github.com/kaderbozkaya/business-analysis-projects/blob/main/K%C3%BCbra%20Bahar.png",
     },
     {
       id: "02",
       title: "User Story Map – Expense Tracking Project",
       desc: "This user story map outlines the main user goals and related tasks within the expense tracking system, helping to define core features and prioritize development.",
-      img: "/story-mapping.png",
+      img: `${BASE_PATH}/story-mapping.png`,
       url: "https://www.figma.com/design/FxsjeIjyb5cigZqkFZljTS/finansal-y%C3%B6netim-user-story-map?node-id=0-1&p=f&t=tWqYjc9mh6X7Ags5-0",
     },
     {
       id: "03",
       title: "User Flow – Expense Tracking Project",
       desc: "The user flow visualizes how users interact with the expense tracking app, from adding expenses to analyzing their spending habits.",
-      img: "/user-journey.png",
+      img: `${BASE_PATH}/user-journey.png`,
       url: "https://miro.com/app/board/uXjVJMvrcfo=/?focusWidget=3458764639233724800",
     },
     {
       id: "04",
       title: "Site Map – Expense Tracking Project",
       desc: "This site map presents the overall structure of the expense tracking app, organizing pages and navigation to ensure a clear and intuitive user experience.",
-      img: "/site-map.png",
+      img: `${BASE_PATH}/site-map.png`,
       url: "https://miro.com/app/board/uXjVJUSbFbU=/",
     },
     {
       id: "05",
       title: "Mockup – Expense Tracking Project",
       desc: "High-fidelity mockups that reflect the visual design, color palette, and usability principles of the expense tracking application.",
-      img: "/mockup.png",
+      img: `${BASE_PATH}/mockup.png`,
       url: "https://www.figma.com/design/zkMZKP3VQierzENP8CE1rd/gidergo-mockup?node-id=0-1&p=f&t=xVKBlxvOwV9fcn2Y-0",
     },
     {
       id: "06",
-      title: "Persona – Professional Amazon Seller ",
-      desc: `Represents a seller focused on growing their brand and achieving financial independence through global expansion.  
+      title: "Persona – Professional Amazon Seller",
+      desc: `Represents a seller focused on growing their brand and achieving financial independence through global expansion.
 Helps identify key motivations, challenges, and decision-making patterns in the Amazon selling experience.`,
-      img: "/Persona3.png",
+      img: `${BASE_PATH}/Persona3.png`,
       url: "https://github.com/kaderbozkaya/business-analysis-projects/blob/main/Mehmet%20Y%C4%B1lmaz,E-ticaret%20Giri%C5%9Fimcisi.png",
     },
     {
@@ -62,31 +63,32 @@ Helps identify key motivations, challenges, and decision-making patterns in the 
       desc: `Represents an experienced professional managing Amazon platform operations.
 Focuses on improving performance, enhancing user experience, and ensuring compliance with platform policies.
 Provides insights into technical, analytical, and communication challenges in large-scale e-commerce environments.`,
-      img: "/Persona4.png",
+      img: `${BASE_PATH}/Persona4.png`,
       url: "https://github.com/kaderbozkaya/business-analysis-projects/blob/main/Persona4.png",
     },
     {
       id: "08",
       title: "Amazon User Story Map",
       desc: "I created a User Story Map to visualize the main user flows and prioritize features of the Amazon e-commerce experience. This map helped structure the product backlog and identify core functionalities such as browsing, adding to cart, and checkout.",
-      img: "/amazon-story-map.png",
+      img: `${BASE_PATH}/amazon-story-map.png`,
       url: "https://www.figma.com/design/JaBpx4Qn009EzlkUhKkGoh/User-Story-Mapping--Copy-?node-id=35652-5047&p=f&t=ca7rL0HuuV73nCPr-0",
     },
     {
       id: "09",
       title: "User Journey Flow – Amazon Best Sellers",
-      desc: "I designed a User Journey Flow for the Amazon Best Sellers section.I focused on how users discover top products, build trust through reviews, and quickly complete purchases.",
-      img: "/amazon-user-journey.png",
+      desc: "I designed a User Journey Flow for the Amazon Best Sellers section. I focused on how users discover top products, build trust through reviews, and quickly complete purchases.",
+      img: `${BASE_PATH}/amazon-user-journey.png`,
       url: "https://miro.com/app/board/uXjVI9uu4dA=/",
     },
     {
       id: "10",
       title: "Amazon - Site Map",
-      desc: "I created a Site Map to outline the structural hierarchy of the Amazon e-commerce website.This visualization ensured clear information architecture and intuitive navigation for users.",
-      img: "/amazon-site-map.png",
+      desc: "I created a Site Map to outline the structural hierarchy of the Amazon e-commerce website. This visualization ensured clear information architecture and intuitive navigation for users.",
+      img: `${BASE_PATH}/amazon-site-map.png`,
       url: "https://miro.com/app/board/uXjVI6ERKC4=/",
     },
   ];
+
   return (
     <div className="px-[8%] lg:px-[16%] py-15 text-white">
       <Swiper
