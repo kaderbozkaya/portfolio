@@ -10,15 +10,13 @@ export default function Header() {
   return (
     <header className="h-[100vh] text-white md:py-12 relative ">
       <div className="flex  flex-col md:flex-row items-center justify-between px-[8%] lg:px-[16%]">
-        <div className="lg:w-1/2 text-start md:text-left">
-          <p className="text-lg mb-2 text-[var(--text-color)]">
+        <div className="lg:w-1/2 text-start ">
+          <p className="text-lg  mb-2 text-[var(--text-color)]">
             MIS Graduate | Bridging Business & Technology
           </p>
-          <h1 className="text-5xl text-start lg:text-8xl mb-2 text-[var(--text-color)]">
-            Hello I&apos;m
-            <span className="text-[var(--text-color2)] ml-2">
-              Kader Bozkaya
-            </span>
+          <h1 className="text-5xl text-start lg:text-6xl mb-2 text-[var(--text-color)]">
+            Hello I&apos;m <br />
+            <span className="text-[var(--text-color2)] ">Kader Bozkaya</span>
           </h1>
           <p className="text-[color:var(--text-color)] text-md lg:text-xl my-8">
             Passionate about transforming business needs into impactful digital
@@ -49,7 +47,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="w-2/3 lg:w-1/2 mt-10 lg:mt:0 flex justify-center relative">
+        <div className="w-2/3 lg:w-1/2 mt-10 flex justify-center relative md:ml-4">
           <div className="relative rounded-full flex items-center justify-center">
             <div className="relative hero-image w-full h-full rounded-full overflow-hidden">
               <Image
