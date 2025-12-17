@@ -33,10 +33,21 @@
 // export default nextConfig;
 
 
+// import type { NextConfig } from "next";
+
+// const nextConfig: NextConfig = {
+//   // Vercel için ekstra ayara gerek yok
+// };
+
+// export default nextConfig;
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Vercel için ekstra ayara gerek yok
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
