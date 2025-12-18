@@ -42,7 +42,7 @@ export default function Contact() {
         </div>
         <form onSubmit={onSubmit} className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">
-            <div className="p-2 md:w-1/2">
+            <div className="p-2 md:w-1/2 w-full">
               <div className="relative">
                 <label htmlFor="name" className="leading-7 text-sm ">
                   Name
@@ -55,7 +55,7 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <div className="p-2 md:w-1/2">
+            <div className="p-2 md:w-1/2 w-full">
               <div className="relative">
                 <label htmlFor="email" className="leading-7 text-sm ">
                   Email
